@@ -1,1 +1,35 @@
 
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			var arr = [11, 2, 34, 666, 15, 16, 14, 444, 0];
+
+			function selection(arr) {
+				var index, temp;
+				for(var i = 0; i < arr.length; i++) {
+					index = i;
+					
+					for(var j = i + 1; j < arr.length; j++) {
+						if(arr[j] < arr[index]) {
+							index = j;
+						}
+					}
+					
+					temp = arr[i];
+					arr[i] = arr[index];
+					arr[index] = temp;
+				}
+				return arr;
+			}
+			console.log(selection(arr))
+		</script>
+	</body>
+
+</html>
