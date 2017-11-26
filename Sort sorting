@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript">
+    function paixu(a,b)
+    {
+        return a>b;
+    }
+    arry1=new Array(11,25,74,99,8,666);
+    document.write("排序前"+arry1+"<br/>");
+    document.write("排序后"+arry1.sort(paixu));
+  </script>
+ </head>
+ <body>
+ </body>
+</html>
