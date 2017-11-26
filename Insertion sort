@@ -11,23 +11,22 @@
 			var arr = [11, 2, 34, 666, 15, 16, 14, 444, 0];
 
 			function insert(arr) {
-				var temp=null;
-				for(var i=1;i<arr.length;i++){
-					if(arr[i]<arr[i-1]){
-					temp=arr[i];
-					var p=i-1;
-					while(temp<arr[p]&&p>=0){
-						arr[p+1]=arr[p];
-						p--;
+				var temp = null;
+				for(var i = 1; i < arr.length; i++) {
+					if(arr[i] < arr[i - 1]) {
+						temp = arr[i];
+						var p = i - 1;
+						while(temp < arr[p] && p >= 0) {
+							arr[p + 1] = arr[p];
+							p--;
+						}
+						arr[p + 1] = temp;
+
 					}
-					arr[p+1]=temp;
-					
-				}
 				}
 				return arr;
 			}
-				console.log(insert(arr));
-			
+			console.log(insert(arr));
 		</script>
 	</body>
 
